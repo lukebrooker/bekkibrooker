@@ -1,0 +1,94 @@
+.Gallery {
+  height: 100%;
+  margin: -1px; /*Hide outer "borders"*/
+}
+
+.Gallery-cell {
+  transition: opacity .4s ease-out,
+  transform .25s ease-out;
+  transform: scale(.25);
+  opacity: 0;
+}
+
+.Gallery-cell.is-loaded {
+  transform: scale(1);
+  opacity: 1;
+}
+
+
+
+.Gallery-item {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 0;
+  margin: 1px;
+  padding-top: 100%;
+  background-color: rgb(240, 240, 240);
+}
+
+.Gallery-item:before {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: calc(var(--rhythm) * 1);
+  height: calc(var(--rhythm) * 1);
+  margin-top: calc(var(--rhythm) * -.5);
+  margin-left: calc(var(--rhythm) * -.5);
+  content: '';
+  animation: loading .9s infinite linear;
+  border-top: calc(var(--rhythm) * .125) solid rgba(0,0,0,.1);
+  border-right: calc(var(--rhythm) * .125) solid rgba(0,0,0,.1);
+  border-bottom: calc(var(--rhythm) * .125) solid rgba(0,0,0,.1);
+  border-left: calc(var(--rhythm) * .125) solid rgba(0,0,0,.5);
+  border-radius: var(--rhythm);
+}
+
+.Gallery-image {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  max-width: none;
+  margin: auto;
+  transition: transform .45s ease-out, opacity .75s ease-out;
+  transform: scale(1.1, 1.1);
+}
+
+.Gallery-image.is-loading {
+  transform: scale(1, 1);
+  opacity: 0;
+}
+
+.Gallery-image:hover {
+  transform: scale(1, 1);
+}
+
+.Gallery-image--portrait {
+  width: 100%;
+}
+
+.Gallery-image--landscape {
+  left: 50%;
+  height: 100%;
+  margin-left: -75%;
+}
+
+.Gallery-imageLarge {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: none;
+}
+
+.Gallery-imageLarge.is-active {
+  z-index: 3;
+}

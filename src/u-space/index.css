@@ -1,0 +1,84 @@
+/** @define u-space; use strict */
+
+:root {
+  --space: var(--rhythm);
+}
+
+.u-sMA1 {
+  margin: var(--space) !important;
+}
+
+.u-sMV1 {
+  margin-top: var(--space) !important;
+  margin-bottom: var(--space) !important;
+}
+
+.u-sMV2 {
+  margin-top: calc(var(--space) * 2) !important;
+  margin-bottom: calc(var(--space) * 2) !important;
+}
+
+.u-sMH1 {
+  margin-left: var(--space) !important;
+  margin-right: var(--space) !important;
+}
+
+.u-sMTH {
+  margin-top: calc(var(--space) * .5) !important;
+}
+
+.u-sMT1 {
+  margin-top: var(--space) !important;
+}
+
+.u-sMBH {
+  margin-bottom: calc(var(--space) * .5) !important;
+}
+
+.u-sMB1 {
+  margin-bottom: var(--space) !important;
+}
+
+.u-sMB2 {
+  margin-bottom: calc(var(--space) * 2) !important;
+}
+
+.u-sPA1 {
+  padding: var(--space) !important;
+}
+
+.u-sPAH {
+  padding: calc(var(--space) * .5) !important;
+}
+
+.u-sPHH {
+  padding-left: calc(var(--space) * .5) !important;
+  padding-right: calc(var(--space) * .5) !important;
+}
+
+.u-sPLH {
+  padding-left: calc(var(--space) * .5) !important;
+}
+
+.u-sPLQ {
+  padding-left: calc(var(--space) * .25) !important;
+}
+
+.u-sPH1 {
+  padding-left: var(--space) !important;
+  padding-right: var(--space) !important;
+}
+
+.u-sPV1 {
+  padding-top: var(--space) !important;
+  padding-bottom: var(--space) !important;
+}
+
+.u-sPV2 {
+  padding-top: calc(var(--space) * 2) !important;
+  padding-bottom: calc(var(--space) * 2) !important;
+}
+
+.u-sPT2 {
+  padding-top: calc(var(--space) * 2) !important;
+}

@@ -1,0 +1,86 @@
+/** @define Base; use strict */
+
+:root {
+  --base-font-family-heading: sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  transition: opacity .25s ease-out;
+  font-size: var(--font-size);
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  font-weight: 300;
+  overflow-x: hidden;
+  --webkit-overflow-touch: scrolling;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--base-font-family-heading);
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+strong {
+  font-weight: 400;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+small {
+  line-height: 1.3;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+svg {
+  max-height: 100%;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin: calc(var(--rhythm) * 2) 0;
+}
+
+input,
+button,
+textarea {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+@media (--gtmd-viewport) {
+  html {
+    font-size: var(--font-size-md);
+  }
+}
+
+@media (--lg-viewport) {
+  html {
+    font-size: var(--font-size-lg);
+  }
+}

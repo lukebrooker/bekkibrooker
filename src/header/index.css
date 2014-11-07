@@ -1,0 +1,58 @@
+/** @define Header; use strict */
+
+:root {
+  --header-size-sm: 52px;
+  --header-size-md: calc(var(--rhythm) * 3);
+  --header-size-lg: calc(var(--rhythm) * 3);
+}
+
+.Header {
+  display: block;
+  z-index: 100;
+  background: var(--color-white);
+  width: 100%;
+  transition: transform .5s ease-out;
+}
+
+.Header-container {
+  position: relative;
+  height: 100%;
+}
+
+.Header-child {
+  min-height: 100%;
+}
+
+@media (--sm-viewport) {
+  .Header {
+    min-width: 320px;
+    box-shadow: 0 0 5px rgba(0,0,0,.05);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .Header.is-unavailable {
+    transform: translateY(-var(--header-size-sm));
+  }
+  .Header-child {
+    padding-top: var(--header-size-sm);
+  }
+}
+
+@media (--gtmd-viewport) {
+  .Header {
+    position: fixed;
+    padding-top: calc(var(--header-size-lg) * .125);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: var(--header-size-lg);
+    border-right: 1px solid #eeeeee;
+    background: #ffffff;
+  }
+  .Header-child {
+    margin-left: var(--header-size-lg);
+    position: relative;
+  }
+}

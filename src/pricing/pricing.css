@@ -1,0 +1,31 @@
+.Pricing {
+  /*Quick clearfix*/
+  overflow: hidden;
+  position: relative;
+}
+
+.Pricing:before {
+  position: absolute;
+  width: 100%;
+  bottom: .5em;
+  left: 0;
+  content: '';
+  border-bottom: 1px dashed #ccc;
+}
+
+.Pricing-title,
+.Pricing-price {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  background-color: #fff;
+}
+
+.Pricing-title {
+  padding-right: .2em;
+}
+
+.Pricing-price {
+  float: right;
+  padding-left: .2em;
+}

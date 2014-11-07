@@ -1,0 +1,49 @@
+/** @define Home; use strict */
+
+.Home {
+  /*padding-top: 5vmin;*/
+  background: #eee url('images/Home-bg.jpg');
+  background-size: cover;
+  background-position: center 35%;
+  text-align: center;
+}
+
+.Home-logo {
+  margin-top: calc(var(--rhythm) * 1);
+  max-width: 5em;
+  background: radial-gradient(ellipse at center, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.4) 60%, rgba(255,255,255,0) 70%);
+  padding-bottom: var(--rhythm);
+}
+
+.Home-cta {
+  position: absolute;
+  bottom: 10vmin;
+  left: 0;
+  right: 0;
+}
+
+.Home-ctaButton {
+  display: inline-block;
+  background: color(var(--color-white) alpha(.75));
+  border-radius: 100px;
+  font-weight: 400;
+  padding: calc(var(--rhythm) * .25) calc(var(--rhythm) * .75);
+  font-family: var(--font-family-sans-serif);
+  transition: all .25s ease-out;
+}
+
+.Home-ctaButton:hover {
+  background: var(--color-white);
+  transform: scale(1.1, 1.1);
+}
+
+@media (--gtmd-viewport) {
+  .Home-logo {
+    margin-top: calc(var(--rhythm) * 2);
+    height: 25vmin;
+  }
+
+  .Home-ctaButton {
+    font-size: calc(var(--font-size) * 1.25);
+  }
+}

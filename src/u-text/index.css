@@ -1,0 +1,15 @@
+@import 'suitcss-utils-text';
+
+.u-textLead {
+  font-size: 1.25em;
+}
+
+.u-textMeta {
+  font-size: .8em;
+  opacity: .6;
+  font-family: var(--font-family-sans-serif);
+}
+
+.u-textSmall {
+  font-size: .8em;
+}

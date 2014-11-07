@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include icons.svg %}
+    <div class="Header-container">
+      <header class="Header" id="header">
+        <nav class="Nav" role="navigation">
+          <ul class="u-listUnstyled">
+            <li class="Nav-item">
+              <a class="Nav-link{% if page.navActive == 'home' %} is-active{% endif %}" href="{{ site.baseurl }}/">
+                <svg class="Nav-icon Nav-iconTitle Icon"><use xlink:href="#Icon-logo"></use></svg>
+              </a>
+            </li>
+            {% for navItem in site.nav %}
+            <li class="Nav-item">
+              <a class="Nav-link{% if navItem == page.navActive %} is-active{% endif %}" href="{{ site.baseurl }}/{{ navItem }}">
+                <svg class="Icon Icon-stroked Nav-icon"><use xlink:href="#Icon-{{ navItem }}"></use></svg>
+                <span class="Nav-text">{{ navItem | capitalize }}</span>
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </header>
+
+      <main id="page" class="main Header-child{% if page.classes %}{% for class in page.classes %} {{class}}{% endfor %}{% endif %}" role="main">
+

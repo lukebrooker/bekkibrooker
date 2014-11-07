@@ -1,0 +1,59 @@
+/**
+* Theme definition
+*
+* This defines the theme in fundamental terms, but not how it is applied to
+* the components. That is done in `theme-map.css`.
+*/
+
+/**
+* Breakpoints
+*/
+
+@custom-media --sm-viewport (min-width:0) and (max-width:639px);
+@custom-media --md-viewport (min-width:640px) and (max-width:960px);
+@custom-media --gtmd-viewport (min-width:640px);
+@custom-media --lg-viewport (min-width:960px);
+@custom-media --xlg-viewport (min-width:1060px);
+
+/**
+* Colors
+*/
+
+/*Base*/
+:root {
+  --color-off-black: #292f33;
+  --color-charcoal: #444;
+  --color-white: #ffffff;
+  --color-off-white: #f5f8fa;
+}
+
+/*Primary*/
+:root {
+  --color-green: #58af7d;
+}
+
+/**
+* Fonts
+*/
+
+:root {
+  --font-size-browser: 16;
+  --font-size-sm-px: 18;
+  --font-size-md-px: 20;
+  --font-size-lg-px: 22;
+  --font-size: calc(var(--font-size-sm-px)/var(--font-size-browser) * 1rem );
+  --font-size-md: calc(var(--font-size-md-px)/var(--font-size-browser) * 1rem );
+  --font-size-lg: calc(var(--font-size-lg-px)/var(--font-size-browser) * 1rem );
+  --font-family: 'jubilat', serif;
+  --font-family-sans-serif: 'brandon-grotesque', sans-serif;
+  --font-family-heading: var(--font-family-sans-serif);
+  --line-height: 1.65;
+}
+
+/**
+* Vertical Rhythm
+*/
+
+:root {
+  --rhythm: calc(var(--line-height) * 1rem);
+}

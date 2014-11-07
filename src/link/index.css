@@ -1,0 +1,19 @@
+.Link {
+
+}
+
+.Link--box {
+  margin-left: calc(var(--rhythm) * -.5);
+  margin-right: calc(var(--rhythm) * -.5);
+  padding: calc(var(--rhythm) * .5);
+  transition: all .25s ease-out;
+}
+
+.Link--box:hover,
+.Link--box:focus {
+  background-color: rgba(0,0,0,0.05);
+}
+
+.Link--unstyled {
+  background: none !important;
+}

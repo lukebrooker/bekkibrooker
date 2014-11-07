@@ -1,0 +1,41 @@
+/**
+ * Map theme variables to component variables
+ */
+
+/**
+  * Suit Base
+  */
+
+:root {
+  --base-background: #fff;
+  --base-color: var(--color-off-black);
+  --base-font: var(--font-size)/var(--line-height) var(--font-family);
+  --base-link-color: var(--color-charcoal);
+  --base-link-color-hover: var(--color-off-black);
+}
+
+/**
+  * Suit Grid
+  */
+
+:root {
+  --Grid-font-size: 1rem;
+  --Grid-gutter-size: calc(var(--rhythm) * 1.5);
+}
+
+/**
+  * Base
+  */
+
+:root {
+  --base-font-family-heading: var(--font-family-heading);
+}
+
+/**
+ * Nav
+ */
+
+:root {
+  --navigation-icon-size: calc(var(--rhythm) * 3);
+  --nav-font-family: var(--font-family-heading);
+}

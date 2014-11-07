@@ -1,0 +1,10 @@
+.breadcrumb {
+  font-family: var(--font-family-heading);
+  text-transform: uppercase;
+  opacity: .6;
+}
+
+.breadcrumb:hover,
+.breadcrumb:focus {
+  opacity: 1;
+}

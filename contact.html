@@ -1,0 +1,81 @@
+---
+title: Contact
+permalink: /contact/
+navActive: contact
+---
+
+<div id="contact" class="u-lRestrictRead u-sPV1 u-sPHH">
+
+  <div class="Prose">
+    <h1>Contact</h1>
+
+    <p class="u-textLead u-sMT1">
+      If you could let me know a little about yourself and what you are looking for, I'd love to help achieve the hair of your dreams.
+    </p>
+    <p>
+      Looking for details about my services, prices and, me? Check out my <a href="/about">about page</a>.
+    </p>
+  </div>
+
+  <form id="contact-form" class="u-sMV1">
+
+    <fieldset id="contact-form-fields" class="Form-fields">
+
+      <div class="u-sMB1">
+        <label class="Form-label" for="name">Your Name</label>
+        <input class="u-sizeFull Form-input" id="name" name="name" type="text" placeholder="Enter your full name">
+      </div>
+
+      <div class="u-sMB1">
+        <label class="Form-label" for="email">Your Email</label>
+        <input class="u-sizeFull Form-input" id="email" name="email" type="email" placeholder="Enter your email address">
+      </div>
+
+      <div id="type">
+        <h2 class="Form-label u-sMBH">What are contacting me about?</h2>
+        <div class="Form-radio">
+          <input class="Form-radioInput u-hiddenVisually" name="contact-type" type="radio" id="type-wedding" value="type-wedding" />
+          <label class="Form-radioLabel u-block" for="type-wedding">Wedding Hair</label>
+        </div>
+        <div class="Form-radio">
+          <input class="Form-radioInput u-hiddenVisually" name="contact-type" type="radio" id="type-formal" value="type-formal" />
+          <label class="Form-radioLabel u-block" for="type-formal">Formal Hair</label>
+        </div>
+        <div class="Form-radio">
+          <input class="Form-radioInput u-hiddenVisually" name="contact-type" type="radio" id="type-fashion" value="type-fashion" />
+          <label class="Form-radioLabel u-block" for="type-fashion">Fashion &amp; Photo Shoots</label>
+        </div>
+        <div class="Form-radio">
+          <input class="Form-radioInput u-hiddenVisually" name="contact-type" type="radio" id="type-general" value="type-general" />
+          <label class="Form-radioLabel u-block" for="type-general">General</label>
+        </div>
+      </div>
+
+      <div class="u-sMT1 u-sMB2">
+        <label class="Form-label" for="msg">Message/Details</label>
+        <textarea class="u-sizeFull Form-input" id="msg" name="msg" cols="6" rows="6"></textarea>
+      </div>
+
+      <label class="u-hiddenVisually" for="human">Leave blank if you are a human</label>
+      <input class="u-hiddenVisually" id="human" name="human" type="text">
+
+    </fieldset>
+
+    <div class="u-textCenter Form-responseContainer">
+      <div id="contact-form-response" class="Form-response u-sPAH">
+        <button class="Form-responseClose" id="contact-form-response-close">&times;</button>
+        <div class="u-table">
+          <div class="u-tableCell u-size1of3">
+            <img class="u-lRound" src="/assets/images/bekki-brooker-sm.jpg" alt="Bekki Brooker">
+          </div>
+          <div class="u-tableCell u-size2of3 u-sPLH u-alignMiddle">
+            <p><strong>Thanks for contacting me.</strong><br>I will get back to you as soon as I can.</p>
+          </div>
+        </div>
+      </div>
+      <button id="submit" name="submit" class="Button Button--large u-size2of4 u-sm-sizeFull u-lRound">Send</button>
+    </div>
+
+  </form>
+
+</div>

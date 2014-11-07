@@ -1,0 +1,38 @@
+# Site settings
+title: Bekki Brooker
+email: hair@bekkibrooker.com
+tagline: "Brisbane Wedding Hair Stylist"
+description: "Hair Stylist"
+baseurl: ""
+url: "http://bekkibrooker.com"
+
+# Build settings
+markdown: kramdown
+permalink: journal/:title
+exclude: ['node_modules', 'src', '*.sublime-project', '*.sublime-workspace', 'gulpfile.js', 'package.json', 'README.md']
+
+nav:
+  - gallery
+  - about
+  - journal
+  - contact
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+  -
+    scope:
+      path: "" # all posts have the `post` layout
+      type: posts
+    values:
+      layout: post
+      navActive: "journal"
