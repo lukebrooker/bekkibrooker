@@ -446,7 +446,7 @@
  * Size: breakpoint 2 (medium)
  */
 
-@media (min-width:640px) and (max-width:960px) {
+@media (min-width:640px) and (max-width:959px) {
   /**
    * Make an element shrink wrap its content.
    */
@@ -620,7 +620,7 @@
  * Size: breakpoint 3 (large)
  */
 
-@media (min-width:960px) {
+@media (min-width:960px) and (max-width:1059px) {
   /**
    * Make an element shrink wrap its content.
    */
@@ -1908,9 +1908,9 @@ textarea {
 
 .Home {
   /*padding-top: 5vmin;*/
-  background: #eee url('images/Home-bg.jpg');
+  background: #eee url('images/Home-bg-sm.jpg');
   background-size: cover;
-  background-position: center 35%;
+  background-position: center center;
   text-align: center;
 }
 
@@ -1948,6 +1948,10 @@ textarea {
 }
 
 @media (min-width:640px) {
+  .Home {
+    background-image: url('images/Home-bg.jpg');
+  }
+
   .Home-logo {
     margin-top: 3.3rem;
     height: 25vmin;

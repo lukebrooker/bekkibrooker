@@ -79,7 +79,7 @@ textarea {
   }
 }
 
-@media (--lg-viewport) {
+@media (--gtlg-viewport) {
   html {
     font-size: var(--font-size-lg);
   }

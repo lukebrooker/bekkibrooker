@@ -2,9 +2,9 @@
 
 .Home {
   /*padding-top: 5vmin;*/
-  background: #eee url('images/Home-bg.jpg');
+  background: #eee url('images/Home-bg-sm.jpg');
   background-size: cover;
-  background-position: center 35%;
+  background-position: center center;
   text-align: center;
 }
 
@@ -38,6 +38,10 @@
 }
 
 @media (--gtmd-viewport) {
+  .Home {
+    background-image: url('images/Home-bg.jpg');
+  }
+
   .Home-logo {
     margin-top: calc(var(--rhythm) * 2);
     height: 25vmin;
