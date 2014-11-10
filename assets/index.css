@@ -620,7 +620,7 @@
  * Size: breakpoint 3 (large)
  */
 
-@media (min-width:960px) and (max-width:1059px) {
+@media (min-width:960px) {
   /**
    * Make an element shrink wrap its content.
    */
