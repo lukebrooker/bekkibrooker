@@ -8,6 +8,18 @@
   <meta name="author" content="Bekki Brooker">
   <meta http-equiv="cleartype" content="on">
 
+  <!-- Facebook -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:site_name" content="{{ site.title }}"/>
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:image" content="{{ '/assets/images/fb.jpg' | prepend: site.baseurl | prepend: site.url }}" />
+  {% if page.path contains '_posts' %}
+  <meta property="og:type" content="article" />
+  <meta property="article:author" content="https://www.facebook.com/bekkibrooker" />
+  <!-- <meta property="article:publisher" content="https://www.facebook.com/bekkibrookerhair" /> -->
+  {% endif %}
+
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
   <!-- Custom CSS -->
