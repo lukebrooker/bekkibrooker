@@ -1762,6 +1762,8 @@ ul {
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
+  --webkit-overflow-touch: scrolling;
 }
 
 html {
@@ -1780,8 +1782,6 @@ html {
 body {
   min-width: 320px;
   font-weight: 300;
-  overflow-x: hidden;
-  --webkit-overflow-touch: scrolling;
 }
 
 h1,
@@ -1907,7 +1907,6 @@ textarea {
 /** @define Home; use strict */
 
 .Home {
-  /*padding-top: 5vmin;*/
   background: #eee url('images/Home-bg-sm.jpg');
   background-size: cover;
   background-position: center center;
@@ -1915,7 +1914,6 @@ textarea {
 }
 
 .Home-logo {
-  margin-top: 1.65rem;
   max-width: 5em;
   background: -webkit-radial-gradient(center, ellipse, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.4) 60%, rgba(255,255,255,0) 70%);
   background: radial-gradient(ellipse at center, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.4) 60%, rgba(255,255,255,0) 70%);
@@ -1953,8 +1951,7 @@ textarea {
   }
 
   .Home-logo {
-    margin-top: 3.3rem;
-    height: 25vmin;
+    margin-top: 0.825rem;
   }
 
   .Home-ctaButton {
@@ -2483,8 +2480,8 @@ textarea {
 
 .Social-link {
   display: inline-block;
-  width: 2.4749999999999996rem;
-  height: 2.4749999999999996rem;
+  width: 2.0625rem;
+  height: 2.0625rem;
   padding: 0.4125rem;
   margin: 0 0.103125rem 0.4125rem;
   opacity: .9;

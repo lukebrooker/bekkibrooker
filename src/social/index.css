@@ -6,8 +6,8 @@
 
 .Social-link {
   display: inline-block;
-  width: calc(var(--rhythm) * 1.5);
-  height: calc(var(--rhythm) * 1.5);
+  width: calc(var(--rhythm) * 1.25);
+  height: calc(var(--rhythm) * 1.25);
   padding: calc(var(--rhythm) * .25);
   margin: 0 calc(var(--rhythm) * .0625) calc(var(--rhythm) * .25);
   opacity: .9;

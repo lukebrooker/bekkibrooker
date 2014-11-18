@@ -1,7 +1,6 @@
 /** @define Home; use strict */
 
 .Home {
-  /*padding-top: 5vmin;*/
   background: #eee url('images/Home-bg-sm.jpg');
   background-size: cover;
   background-position: center center;
@@ -9,7 +8,6 @@
 }
 
 .Home-logo {
-  margin-top: calc(var(--rhythm) * 1);
   max-width: 5em;
   background: radial-gradient(ellipse at center, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.4) 60%, rgba(255,255,255,0) 70%);
   padding-bottom: var(--rhythm);
@@ -43,8 +41,7 @@
   }
 
   .Home-logo {
-    margin-top: calc(var(--rhythm) * 2);
-    height: 25vmin;
+    margin-top: calc(var(--rhythm) * .5);
   }
 
   .Home-ctaButton {
