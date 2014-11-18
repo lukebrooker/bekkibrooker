@@ -1854,6 +1854,11 @@ textarea {
           transition: transform .5s ease-out;
 }
 
+.Header-container {
+  position: relative;
+  height: 100%;
+}
+
 .Header-child {
   min-height: 100%;
 }
@@ -1889,11 +1894,6 @@ textarea {
     width: 4.949999999999999rem;
     border-right: 1px solid #eeeeee;
     background: #ffffff;
-  }
-
-  .Header-container {
-    position: relative;
-    height: 100%;
   }
 
   .Header-child {
