@@ -1763,7 +1763,6 @@ html,
 body {
   height: 100%;
   overflow-x: hidden;
-  --webkit-overflow-scrolling: touch;
 }
 
 html {
@@ -1777,6 +1776,7 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  --webkit-overflow-scrolling: touch;
 }
 
 body {
