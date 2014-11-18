@@ -26,7 +26,7 @@
 @media (--sm-viewport) {
   .Header {
     min-width: 320px;
-    box-shadow: 0 0 5px rgba(0,0,0,.05);
+    box-shadow: 0 0 calc(var(--rhythm) * .75) rgba(0,0,0,.07), 0 0 calc(var(--rhythm) * .125) rgba(0,0,0,.1);
     position: fixed;
     top: 0;
     left: 0;
