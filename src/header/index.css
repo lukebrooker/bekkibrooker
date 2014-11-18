@@ -14,11 +14,6 @@
   transition: transform .5s ease-out;
 }
 
-.Header-container {
-  position: relative;
-  height: 100%;
-}
-
 .Header-child {
   min-height: 100%;
 }
@@ -51,6 +46,12 @@
     border-right: 1px solid #eeeeee;
     background: #ffffff;
   }
+
+  .Header-container {
+    position: relative;
+    height: 100%;
+  }
+
   .Header-child {
     margin-left: var(--header-size-lg);
     position: relative;

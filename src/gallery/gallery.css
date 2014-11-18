@@ -1,6 +1,6 @@
 .Gallery {
   height: 100%;
-  margin: -1px; /*Hide outer "borders"*/
+  /*margin: -1px; Hide outer "borders"*/
 }
 
 .Gallery-cell {
@@ -14,8 +14,6 @@
   transform: scale(1);
   opacity: 1;
 }
-
-
 
 .Gallery-item {
   position: relative;

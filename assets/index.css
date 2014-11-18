@@ -1762,7 +1762,6 @@ ul {
 html,
 body {
   height: 100%;
-  overflow-x: hidden;
 }
 
 html {
@@ -1776,7 +1775,6 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
-  --webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -1856,11 +1854,6 @@ textarea {
           transition: transform .5s ease-out;
 }
 
-.Header-container {
-  position: relative;
-  height: 100%;
-}
-
 .Header-child {
   min-height: 100%;
 }
@@ -1896,6 +1889,11 @@ textarea {
     width: 4.949999999999999rem;
     border-right: 1px solid #eeeeee;
     background: #ffffff;
+  }
+
+  .Header-container {
+    position: relative;
+    height: 100%;
   }
 
   .Header-child {
@@ -2366,8 +2364,7 @@ textarea {
 
 .Gallery {
   height: 100%;
-  margin: -1px;
-  /*Hide outer "borders"*/
+  /*margin: -1px; Hide outer "borders"*/
 }
 
 .Gallery-cell {
