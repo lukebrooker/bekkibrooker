@@ -1,10 +1,10 @@
 html.swipebox-html.swipebox-touch {
-  overflow: hidden!important;
+  /*overflow: hidden!important;*/
 }
 
 .swipebox-html,
 .swipebox-html body {
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .Swipebox-overlay {
