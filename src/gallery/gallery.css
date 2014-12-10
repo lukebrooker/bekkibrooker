@@ -51,6 +51,7 @@
   right: 0;
   bottom: 0;
   left: 0;
+  width: 100%;
   overflow: auto;
   max-width: none;
   margin: auto;
@@ -67,15 +68,18 @@
   transform: scale(1, 1);
 }
 
-.Gallery-image--portrait {
-  width: 100%;
-}
+/*Need a better solution*/
 
-.Gallery-image--landscape {
+/*.Gallery-image--portrait {
+  width: 100%;
+}*/
+
+/*.Gallery-image--landscape {
   left: 50%;
   height: 100%;
-  margin-left: -75%;
-}
+  width: auto;
+  transform: translateX(-50%);
+}*/
 
 .Gallery-imageLarge {
   position: absolute;
