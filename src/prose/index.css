@@ -18,10 +18,22 @@
 .Prose p a,
 .Prose li a {
   opacity: .9;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, rgba(0,0,0,.7) 70%);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,.4) 50%);
   background-repeat: repeat-x;
   background-size: 2px 2px;
-  background-position: left bottom;
+  background-position: left 90%;
+  color: var(--color-off-black);
+  color: transparent;
+  text-shadow: 0 0 var(--color-off-black), .08em 0 0 #fff, 0 0, -.08em 0 0 #fff;
+  transition: all .25s ease-out;
+}
+
+.Prose p a:hover,
+.Prose li a:hover {
+  color: #000;
+  color: transparent;
+  text-shadow: 0 0 #000, .08em 0 0 #fff, 0 0, -.08em 0 0 #fff;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,.7) 50%);
 }
 
 .Prose p {
