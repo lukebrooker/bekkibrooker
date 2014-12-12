@@ -12,11 +12,18 @@
   margin-right: auto;
 }
 
+.u-lRestrict,
+.u-lRestrictRead {
+  padding-left: calc(var(--rhythm) * .5);
+  padding-right: calc(var(--rhythm) * .5);
+}
+
 .u-lRound {
   border-radius: 1000px;
 }
 
 @media (--gtmd-viewport) {
+  .u-lRestrict,
   .u-lRestrictRead {
     padding-left: calc(var(--rhythm) * 1);
     padding-right: calc(var(--rhythm) * 1);

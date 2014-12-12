@@ -21,6 +21,7 @@
 
 .Header-child {
   min-height: 100%;
+  overflow: hidden;
 }
 
 @media (--sm-viewport) {

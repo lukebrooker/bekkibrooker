@@ -991,17 +991,21 @@
 }
 
 .u-textLead {
-  font-size: 1.25em;
+  font-size: 1.25em !important;
 }
 
 .u-textMeta {
-  font-size: .8em;
-  opacity: .6;
-  font-family: 'brandon-grotesque', sans-serif;
+  font-size: .8em !important;
+  opacity: .6 !important;
+  font-family: 'brandon-grotesque', sans-serif !important;
+}
+
+.u-textDefault {
+  font-size: 1rem !important;
 }
 
 .u-textSmall {
-  font-size: .8em;
+  font-size: .8em !important;
 }
 
 /**
@@ -1087,11 +1091,18 @@
   margin-right: auto;
 }
 
+.u-lRestrict,
+.u-lRestrictRead {
+  padding-left: 0.825rem;
+  padding-right: 0.825rem;
+}
+
 .u-lRound {
   border-radius: 1000px;
 }
 
 @media (min-width:640px) {
+  .u-lRestrict,
   .u-lRestrictRead {
     padding-left: 1.65rem;
     padding-right: 1.65rem;
@@ -1102,6 +1113,10 @@
 
 .u-bgLightest {
   background-color: #ffffff;
+}
+
+.u-bgLighter {
+  background-color: #f4f4f4;
 }
 
 /*Components*/
@@ -1861,6 +1876,7 @@ textarea {
 
 .Header-child {
   min-height: 100%;
+  overflow: hidden;
 }
 
 @media (min-width:0) and (max-width:639px) {
@@ -2055,8 +2071,8 @@ textarea {
 .Prose p a,
 .Prose li a {
   opacity: .9;
-  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,.4) 50%);
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,.4) 50%);
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,.3) 50%);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,.3) 50%);
   background-repeat: repeat-x;
   background-size: 2px 2px;
   background-position: left 90%;

@@ -18,7 +18,7 @@
 .Prose p a,
 .Prose li a {
   opacity: .9;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,.4) 50%);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,.3) 50%);
   background-repeat: repeat-x;
   background-size: 2px 2px;
   background-position: left 90%;
