@@ -38,7 +38,7 @@
         api_key: options.flickr.apiKey,
         media: 'photos',
         photoset_id: options.flickr.photosetId,
-        extras: 'url_m, url_o',
+        extras: 'url_n, url_z',
         format: 'json'
       })
       .success(function(data) {
@@ -46,8 +46,8 @@
         for (var i = 0; i < photoCount; i++) {
           var $selectedItem = $('.js-Gallery-item').eq(i),
               photo = data.photoset.photo[i],
-              imageSrc = photo.url_m,
-              modalImage = photo.url_o,
+              imageSrc = photo.url_n,
+              modalImage = photo.url_z,
               $img = $('<img />')
                 .addClass('Gallery-image js-Gallery-image js-Modal-item is-loading'),
               $newGalleryCell;
