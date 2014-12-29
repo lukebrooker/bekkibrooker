@@ -57,6 +57,7 @@ prose:
           label: "Title"
           placeholder: "Enter a post title…"
       - name: "date"
+        field:
           element: "text"
           label: "date"
           value: CURRENT_DATETIME
