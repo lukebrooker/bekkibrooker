@@ -40,7 +40,7 @@ defaults:
 prose:
   rooturl: ''
   siteurl: 'http://bekkibrooker.com'
-  media: 'media'
+  media: 'assets/media'
   ignore:
     - index.md
     - .gitignore
