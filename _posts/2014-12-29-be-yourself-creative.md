@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 title: Be Yourself Creative
 date: "2014-12-29 10:24"
 excerpt: "Ever feel yourself being swallowed, consumed, taken over? A little dramatic I know."
