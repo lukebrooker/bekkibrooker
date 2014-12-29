@@ -71,7 +71,7 @@ prose:
           help: "Should be in the format '2015-08-29 13:24'"
       - name: "excerpt"
         field:
-          element: "textarea"
+          element: "text"
           label: "Post Excerpt"
           help: "This is used as the description on the the journal listing page."
           placeholder: "Add a journal excerpt…"
