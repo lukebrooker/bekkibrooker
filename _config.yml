@@ -43,9 +43,15 @@ prose:
   media: 'media'
   ignore:
     - index.md
+    - .gitignore
+    - component.json
     - _config.yml
+    - /assets
+    - /src
     - /_layouts
     - /_includes
+    - feed.xml
+    - README.md
     - package.json
     - gulpfile.js
     - CNAME
