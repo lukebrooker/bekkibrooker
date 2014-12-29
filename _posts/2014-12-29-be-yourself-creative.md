@@ -2,7 +2,7 @@
 published: true
 title: Be Yourself Creative
 date: "2014-12-29 10:24"
-excerpt: "Ever feel yourself being swallowed, consumed, taken over (a little dramatic I know)?"
+excerpt: "Ever feel yourself being swallowed, consumed, taken over? A little dramatic I know."
 tags: 
   - life
 ---
