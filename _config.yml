@@ -65,13 +65,14 @@ prose:
       - name: "date"
         field:
           element: "text"
-          label: "date"
-          value: CURRENT_DATETIME
+          label: "Date"
+          value: "2015-08-29 13:24"
+          placeholder: "e.g. 2015-08-29 13:24"
           help: "Should be in the format '2015-08-29 13:24'"
       - name: "excerpt"
         field:
           element: "textarea"
-          label: "Journal excerpt"
+          label: "Post Excerpt"
           help: "This is used as the description on the the journal listing page."
           placeholder: "Add a journal excerpt…"
       - name: "tags"
