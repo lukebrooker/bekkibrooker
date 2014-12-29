@@ -36,3 +36,47 @@ defaults:
     values:
       layout: post
       navActive: "journal"
+
+prose:
+  rooturl: ''
+  siteurl: 'http://bekkibrooker.com'
+  media: 'media'
+  ignore:
+    - index.md
+    - _config.yml
+    - /_layouts
+    - /_includes
+    - package.json
+    - gulpfile.js
+    - CNAME
+  metadata:
+    _posts:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          placeholder: "Enter a post title…"
+      - name: "date"
+          element: "text"
+          label: "date"
+          value: CURRENT_DATETIME
+          help: "Should be in the format '2015-08-29 13:24'"
+      - name: "excerpt"
+        field:
+          element: "textarea"
+          label: "Journal excerpt"
+          help: "This is used as the description on the the journal listing page."
+          placeholder: "Add a journal excerpt…"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Life"
+              value: "life"
+            - name: "Hair"
+              value: "hair"
+            - name: "Wedding"
+              value: "wedding"
+
