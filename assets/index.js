@@ -10095,7 +10095,7 @@ $(function() {
     flickr: {
       url: 'https://api.flickr.com/services/rest/?jsoncallback=?',
       apiKey: '7820ba2455d17f4a69f94bc3f2028484',
-      photosetId: '72157646572847089'
+      photosetId: '72157648133053974'
     }
   };
 
@@ -10129,7 +10129,7 @@ $(function() {
         api_key: options.flickr.apiKey,
         media: 'photos',
         photoset_id: options.flickr.photosetId,
-        extras: 'url_n, url_z',
+        extras: 'url_n, url_c',
         format: 'json'
       })
       .success(function(data) {
@@ -10138,7 +10138,7 @@ $(function() {
           var $selectedItem = $('.js-Gallery-item').eq(i),
               photo = data.photoset.photo[i],
               imageSrc = photo.url_n,
-              modalImage = photo.url_z,
+              modalImage = photo.url_c,
               $img = $('<img />')
                 .addClass('Gallery-image js-Gallery-image js-Modal-item is-loading'),
               $newGalleryCell;

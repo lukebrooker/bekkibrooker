@@ -2543,6 +2543,10 @@ textarea {
   background: #4099ff !important;
 }
 
+.Social-link--google:hover {
+  background: #dd4b39 !important;
+}
+
 .Social-link--facebook:hover {
   background: #3b5998 !important;
 }
