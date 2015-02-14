@@ -23,12 +23,20 @@
   margin-right: var(--space) !important;
 }
 
+.u-sMTQ {
+  margin-top: calc(var(--space) * .25) !important;
+}
+
 .u-sMTH {
   margin-top: calc(var(--space) * .5) !important;
 }
 
 .u-sMT1 {
   margin-top: var(--space) !important;
+}
+
+.u-sMBQ {
+  margin-bottom: calc(var(--space) * .25) !important;
 }
 
 .u-sMBH {
