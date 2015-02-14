@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Style Baby Yeah
 date: "2015-02-11 13:24"
 tags: 
