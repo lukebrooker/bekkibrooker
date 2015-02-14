@@ -7,7 +7,7 @@ tags:
 excerpt: "What could be a helpful tip for you guys out there needing their hair done for that very special something?"
 ---
 
-For the last hmmmm, I'd have to say 4 years, my all time favourite genre in the hair department is up-styles or down-styles, whatever may tickle your fancy. Putting my hands to work and creating masterpieces gets my blood pumping and my creative flare firing. What's even more exciting is seeing the hair movement being awakened with more eclectic, boho, and vintage styles. The rules are out and it's all about freedom.
+For the last hmmmm, I'd have to say 4 years, my all time favourite genre in the hair department is up-styles, down-styles and, whatever else may tickle your fancy. Putting my hands to work and creating masterpieces gets my blood pumping and my creative flare firing. What's even more exciting is seeing the hair movement being awakened with more eclectic, boho, and vintage styles. The rules are out and it's all about freedom.
 
 Hair is moving and nothing is going to hold it back. I do timidly admit I'm a sucker for a classic chignon, but lately I've been encapsulated with girly whimsical soft braids, brushed out waves, and a bit scruffy do. Throw in a gorgeous headpiece and wahla! Whatever it may be really I'm loving styling hair and find it more and more liberating as each day passes. NzJdvk,shuck,zsdfhjMsdvgchmzDvchjZmdcv!!! (That's not code, that's just my excitement).
 
