@@ -9,7 +9,7 @@ excerpt: Last Sunday my creative styling friend Jason and I loaded up his trusty
 
 ![My stall at Vintage Bride Wedding Fair](/assets/media/that-vintage-vibe-4.jpg)
 
-Last Sunday my creative styling friend Jason (while my 2 loves Luke and Orson partied on at home) and I loaded up his trusty Tarago full of old crates and ladders, painted gold pears, pineapples, stacks of flowers, and photos of my hair creations and headed on down to St Lucia for the [Vintage Bride Wedding Fair](http://vintagebridemag.com.au/vintage-bride-wedding-fair-brisbane-15th-february-wrap-up/).
+Last Sunday my creative styling friend Jason (while my 2 loves Luke and Orson partied on at home) and I loaded up his trusty Tarago full of old crates and ladders, painted gold pears, pineapples, stacks of flowers, and photos of my hair creations and headed on down to St Lucia for the [Vintage Bride Wedding Fair](http://vintagebridemag.com.au/see-you-sunday-for-our-brisbane-vintage-wedding-fair/).
 
 ![My stall at Vintage Bride Wedding Fair](/assets/media/that-vintage-vibe-1.jpg)
 
