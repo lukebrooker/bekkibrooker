@@ -2113,6 +2113,11 @@ textarea {
   margin-left: 1.65rem;
 }
 
+.Prose img {
+  margin: 0 -10%;
+  max-width: 120%;
+}
+
 @media (min-width:0) and (max-width:639px) {
   .Prose h1 {
     font-size: 2em;
@@ -2124,6 +2129,18 @@ textarea {
 
   .Prose h3 {
     font-size: 1.3em;
+  }
+
+  .Prose img {
+    margin: 0 -5%;
+    max-width: 110%;
+  }
+}
+
+@media (min-width:640px) and (max-width:959px) {
+  .Prose img {
+    margin: 0 -7%;
+    max-width: 114%;
   }
 }
 
