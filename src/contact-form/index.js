@@ -1,6 +1,6 @@
 
 (function ($) {
-  'use strict';
+  'use strict'
 
   $('#contact-form').submit(function(e) {
     var $email = $('#email'),
@@ -74,32 +74,29 @@
         break;
     }
 
-    $formFields.addClass('is-sending');
-    $formFieldsInputs.attr('disabled', 'disabled');
+    $formFields.addClass('is-sending')
+    $formFieldsInputs.attr('disabled', 'disabled')
     $submit.text('Sending…')
       .addClass('is-active')
-      .attr('disabled', 'disabled');
+      .attr('disabled', 'disabled')
 
     $.ajax({
-      type: 'POST',
-      url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+      async: true,
+      crossDomain: true,
+      url: 'https://api.sendgrid.com/api/mail.send.json',
+      method: 'POST',
+      headers: {
+        authorization: 'Bearer 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',
+        'cache-control': 'no-cache'
+      },
       data: {
-        'key': 'EV4CeXAbtPsqnspb0gBXxQ',
-        'message': {
-          'from_email': $email.val(),
-          'from_name': $name.val(),
-          'headers': {
-            'Reply-To': $email.val()
-          },
-          'subject': subject,
-          'text': message,
-          'to': [
-          {
-            'email': 'hair@bekkibrooker.com',
-            'name': 'Bekki Brooker',
-            'type': 'to'
-          }]
-        }
+        to: 'hair@bekkibrooker.com',
+        toname: 'Bekki Brooker',
+        from: $email.val(),
+        fromname: $name.val(),
+        replyto: $email.val(),
+        subject: subject,
+        text: message
       }
     })
     .done(function(response) {
@@ -146,5 +143,4 @@
       scrollTop: fieldOffset
     }, 300);
   }
-
-}(jQuery || $));
+}(jQuery || $))
