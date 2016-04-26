@@ -81,23 +81,16 @@
       .attr('disabled', 'disabled')
 
     $.ajax({
-      async: true,
-      crossDomain: true,
-      url: 'https://api.sendgrid.com/api/mail.send.json',
+      url: '//formspree.io/hair@bekkibrooker.com',
       method: 'POST',
-      headers: {
-        authorization: 'Bearer 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',
-        'cache-control': 'no-cache'
-      },
       data: {
-        to: 'hair@bekkibrooker.com',
-        toname: 'Bekki Brooker',
-        from: $email.val(),
-        fromname: $name.val(),
-        replyto: $email.val(),
-        subject: subject,
-        text: message
-      }
+        _replyto: $email.val(),
+        _subject: subject,
+        _format: 'plain',
+        name: $name.val(),
+        message: message
+      },
+      dataType: 'json'
     })
     .done(function(response) {
       // show success message

@@ -10020,27 +10020,17 @@ $(function() {
       .addClass('is-active')
       .attr('disabled', 'disabled');
 
-    $.ajax({
-      type: 'POST',
-      url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+		$.ajax({
+      url: '//formspree.io/hair@bekkibrooker.com',
+      method: 'POST',
       data: {
-        'key': 'EV4CeXAbtPsqnspb0gBXxQ',
-        'message': {
-          'from_email': $email.val(),
-          'from_name': $name.val(),
-          'headers': {
-            'Reply-To': $email.val()
-          },
-          'subject': subject,
-          'text': message,
-          'to': [
-          {
-            'email': 'hair@bekkibrooker.com',
-            'name': 'Bekki Brooker',
-            'type': 'to'
-          }]
-        }
-      }
+        _replyto: $email.val(),
+        _subject: subject,
+        _format: 'plain',
+        name: $name.val(),
+        message: message
+      },
+      dataType: 'json'
     })
     .done(function(response) {
       // show success message
