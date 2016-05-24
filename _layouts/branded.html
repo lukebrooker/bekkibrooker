@@ -1,0 +1,18 @@
+{% include header-nonav.html %}
+  <style>
+    .branded__logo {
+      min-width: 8rem;
+      max-width: 9rem;
+      margin: 0 auto;
+      display: block;
+    }
+  </style>
+  <div class="u-lRestrictRead u-sPV1">
+    <header class="branded__header">
+      <img class="branded__logo" src="{{ site.baseurl }}/assets/images/logo.svg" alt="Bekki Brooker, Hair Stylist">
+    </header>
+    <article class="Prose u-sPV1">
+      {{ content }}
+    </article>
+  </div>
+{% include footer.html %}

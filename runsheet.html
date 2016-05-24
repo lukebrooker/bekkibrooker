@@ -1,0 +1,226 @@
+---
+title: Run Sheet
+permalink: /runsheet/
+excerpt: "The runsheet for your wedding"
+published: true
+layout: branded
+---
+
+<style>
+  [contenteditable]:empty:before {
+    content: attr(placeholder);
+    display: block; /* For Firefox */
+    opacity: .6;
+    cursor: text;
+  }
+  [contenteditable]:hover {
+    background-color: #eee;
+  }
+  [contenteditable]:focus {
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.2)
+  }
+  hr {
+    margin: 1.5rem 0 3rem;
+  }
+  .ff-sans {
+    font-family: "brandon-grotesque", sans-serif;
+  }
+  .runsheet * {
+    outline: 0;
+  }
+  .runsheet__title.runsheet__title {
+    font-size: 1.4rem;
+    margin-bottom: .75rem;
+  }
+  .runsheet__info {
+    display: flex;
+    align-items: flex-end;
+  }
+  .runsheet__subtitle > h2,
+  .runsheet__subtitle > h3 {
+    font-size: 1.2rem;
+    text-transform: none;
+    line-height: 1.3;
+  }
+  .runsheet__subtitle > h2 {
+    margin-bottom: .75rem;
+  }
+  .runsheet__subtitle > h3 {
+    font-size: 1rem;
+  }
+  .runsheet__contact {
+    text-align: right;
+    margin-left: auto;
+  }
+  .runsheet__item,
+  .items__item {
+    display: flex;
+    align-items: baseline;
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  .runsheet__item > p:after,
+  .items__info:after {
+    position: absolute;
+    width: 100%;
+    bottom: .5em;
+    left: 0;
+    content: '';
+    border-bottom: 1px dashed #ccc;
+    z-index: -1;
+  }
+  .runsheet__item > *,
+  .items__item > * {
+    background-color: #fff;
+  }
+  .runsheet__items > h2,
+  .runsheet__item > h2 {
+    font-size: 1.2rem;
+    font-family: "brandon-grotesque", sans-serif;
+  }
+  .runsheet__item > h2,
+  .items__label {
+    padding-right: .375rem;
+  }
+  .runsheet__item > p,
+  .items__info {
+    margin-left: auto;
+    padding-left: .375rem;
+  }
+  .runsheet__items {
+    margin-bottom: 1.5rem;
+  }
+  .runsheet__items > h2 {
+    margin-bottom: .75rem;
+  }
+  .items__list.items__list {
+    margin: 0;
+    list-style: none;
+  }
+  .items__item {
+    margin-bottom: .375rem;
+  }
+  .items__label {
+    font-family: "brandon-grotesque", sans-serif;
+  }
+  [contenteditable]:empty ~ .items__item + .items__item {
+    background-color: red;
+  }
+  @media print {
+    [contenteditable]:empty {
+      display: none;
+    }
+  }
+</style>
+<div class="runsheet">
+  <div class="runsheet__header ff-sans">
+    <h1 class="u-sMB1 runsheet__title">Run Sheet</h1>
+    <div class="runsheet__info">
+      <div class="runsheet__subtitle">
+        <h2 contenteditable placeholder="e.g. Jane Vale"></h2>
+        <h3 contenteditable placeholder="e.g. 11th June, 2016"></h3>
+      </div>
+      <div class="runsheet__contact u-textSmall">
+        <div>Bekki Brooker</div>
+        <div>0432 998 929</div>
+        <div>hair@bekkibrooker.com</div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="runsheet__details">
+    <div class="runsheet__items">
+      <h2>Location</h2>
+      <p contenteditable placeholder='e.g. 47 Lehamans Rd, Beenleigh'></p>
+    </div>
+    <div class="runsheet__items">
+      <h2>Hair Stylist (Bekki Brooker)</h2>
+      <ul class="items__list">
+        <li class="items__item">
+          <div class="items__label">Arrival</div>
+          <div class="items__info" contenteditable placeholder="e.g. 6:30am"></div>
+        </li>
+        <li class="items__item">
+          <div class="items__label" contenteditable placeholder="e.g. Bridesmaid #1"></div>
+          <div class="items__info" contenteditable placeholder="e.g. 6:45am"></div>
+        </li>
+        <li class="items__item">
+          <div class="items__label" contenteditable placeholder="e.g. Bridesmaid #2"></div>
+          <div class="items__info" contenteditable placeholder="e.g. 7:30am"></div>
+        </li>
+        <li class="items__item">
+          <div class="items__label" contenteditable placeholder="e.g. Bridesmaid #3"></div>
+          <div class="items__info" contenteditable placeholder="e.g. 8:15am"></div>
+        </li>
+        <li class="items__item">
+          <div class="items__label" contenteditable placeholder="e.g. Bridesmaid #4"></div>
+          <div class="items__info" contenteditable placeholder="e.g. 9:00am"></div>
+        </li>
+        <li class="items__item">
+          <div class="items__label" contenteditable placeholder="e.g. Bridesmaid #5"></div>
+          <div class="items__info" contenteditable placeholder="e.g. 9:45am"></div>
+        </li>
+        <li class="items__item">
+          <div class="items__label" contenteditable placeholder="e.g. Mum #1"></div>
+          <div class="items__info" contenteditable placeholder="e.g. 10:30am"></div>
+        </li>
+        <li class="items__item">
+          <div class="items__label" contenteditable placeholder="e.g. Mum #2"></div>
+          <div class="items__info" contenteditable placeholder="e.g. 11:00am"></div>
+        </li>
+        <li class="items__item">
+          <div class="items__label" contenteditable placeholder="e.g. Flower Girl #1"></div>
+          <div class="items__info" contenteditable placeholder="e.g. 11:30am"></div>
+        </li>
+        <li class="items__item">
+          <div class="items__label" contenteditable placeholder="e.g. Flower Girl #2"></div>
+          <div class="items__info" contenteditable placeholder="e.g. 12:00pm"></div>
+        </li>
+        <li class="items__item">
+          <div class="items__label" contenteditable placeholder="e.g. Bride"></div>
+          <div class="items__info" contenteditable placeholder="e.g. 12:30pm"></div>
+        </li>
+      </ul>
+    </div>
+    <div class="runsheet__item">
+      <h2>Final Touch Ups</h2>
+      <p contenteditable placeholder='e.g. 1:30pm'></p>
+    </div>
+    <div class="runsheet__item">
+      <h2>Pack up/Departure</h2>
+      <p contenteditable placeholder='e.g. 2pm'></p>
+    </div>
+    <div class="runsheet__item">
+      <h2>Ceremony</h2>
+      <p contenteditable placeholder='e.g. 3pm'></p>
+    </div>
+    <div class="runsheet__items">
+      <h2>Notes</h2>
+      <p contenteditable placeholder="e.g. This is a rough guide so timing may vary slightly.">
+        Please ensure everyone has washed and straightened their hair.
+        This is a rough guide, so timings may vary slightly.
+        It is important for everyone to know when their turn is for hair and to
+        please be available, as styling may commence earlier than stated.
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function storeField (e) {
+    localStorage[e.target.dataset.fieldId] = e.target.innerHTML || ''
+    console.log('Stored: ', e.target.dataset.fieldId, e.target.innerHTML)
+  }
+  function initFields () {
+    var fields = document.querySelectorAll('[contenteditable]')
+    for (i = 0; i < fields.length; ++i) {
+      var fieldId = 'rsContent' + i.toString()
+      fields[i].addEventListener('input', storeField)
+      fields[i].dataset.fieldId = fieldId
+      fields[i].innerHTML = localStorage[fieldId] || ''
+    }
+    console.log('Loaded: ', localStorage)
+  }
+  initFields()
+</script>
