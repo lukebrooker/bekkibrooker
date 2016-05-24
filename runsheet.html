@@ -208,9 +208,17 @@ layout: branded
 </div>
 
 <script>
+  function updateTitle (content) {
+    var docTitle = 'Run Sheet | Bekki Brooker'
+    if (content) {
+      document.title = docTitle.slice(0, 9) + ' for ' + content.replace(/(&nbsp;|\s)+$/g,'') + docTitle.slice(9)
+    } else {
+      document.title = docTitle
+    }
+  }
   function storeField (e) {
+    if (e.target.dataset.fieldId === 'rsContent0') updateTitle(e.target.innerHTML)
     localStorage[e.target.dataset.fieldId] = e.target.innerHTML || ''
-    console.log('Stored: ', e.target.dataset.fieldId, e.target.innerHTML)
   }
   function initFields () {
     var fields = document.querySelectorAll('[contenteditable]')
@@ -219,8 +227,8 @@ layout: branded
       fields[i].addEventListener('input', storeField)
       fields[i].dataset.fieldId = fieldId
       fields[i].innerHTML = localStorage[fieldId] || fields[i].innerHTML || ''
+      if (fieldId === 'rsContent0') updateTitle(fields[i].innerHTML)
     }
-    console.log('Loaded: ', localStorage)
   }
   initFields()
 </script>
