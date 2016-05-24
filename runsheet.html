@@ -218,7 +218,7 @@ layout: branded
       var fieldId = 'rsContent' + i.toString()
       fields[i].addEventListener('input', storeField)
       fields[i].dataset.fieldId = fieldId
-      fields[i].innerHTML = localStorage[fieldId] || ''
+      fields[i].innerHTML = localStorage[fieldId] || fields[i].innerHTML || ''
     }
     console.log('Loaded: ', localStorage)
   }
