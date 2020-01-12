@@ -1,8 +1,0 @@
-{
-  "name": "bekkibrooker",
-  "version": "0.0.1",
-  "main": "src/index.js",
-  "dependencies": {
-    "jquery/jquery": "2.1.1"
-  }
-}
