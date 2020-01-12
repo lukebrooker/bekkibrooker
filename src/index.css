@@ -15,17 +15,8 @@
 @import './base/index.css';
 @import './header/index.css';
 @import './home/index.css';
-@import './navigation/index.css';
-@import './prose/index.css';
-@import './breadcrumb/index.css';
-@import './pricing/pricing.css';
-@import './icon/index.css';
 @import './link/index.css';
-@import './form/form.css';
 @import './button/button.css';
-@import './gallery/gallery.css';
-@import './social/index.css';
-@import './swipebox/index.css';
 
 /*Theme*/
 @import './theme/theme.css';
