@@ -19,7 +19,7 @@
   ],
   "dependencies": {
     "headroom.js": "git://github.com/WickyNilliams/headroom.js",
-    "jquery": "^2.1.1",
+    "jquery": "^3.5.0",
     "jquery-autosize": "^1.18.12",
     "suit-utils-list": "^0.4.1",
     "suitcss-base": "^0.7.0",
