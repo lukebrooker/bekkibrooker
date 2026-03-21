@@ -30,6 +30,7 @@ jobs:
           mkdir -p _deploy
           cp index.html _deploy/
           cp README.md _deploy/
+          cp CNAME _deploy/
           cp -r assets _deploy/
           cp -r dist _deploy/
 
