@@ -22,10 +22,36 @@ h1, h2 {
 
 .bg-hair-texture {
   background-image: image-set(
-    url("/assets/images/hair-background.avif") type("image/avif"),
-    url("/assets/images/hair-background.webp") type("image/webp"),
-    url("/assets/images/hair-background.png") type("image/png")
+    url("../assets/images/hair-background.avif") type("image/avif"),
+    url("../assets/images/hair-background.webp") type("image/webp"),
+    url("../assets/images/hair-background.png") type("image/png")
   );
+}
+
+/* Scroll-triggered reveal animations */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+[data-reveal].revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children within a section */
+[data-reveal-stagger] > [data-reveal] {
+  transition-delay: calc(var(--stagger, 0) * 0.12s);
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 
 @theme {
