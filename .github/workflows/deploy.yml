@@ -25,8 +25,16 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
 
+      - name: Prepare deploy directory
+        run: |
+          mkdir -p _deploy
+          cp index.html _deploy/
+          cp README.md _deploy/
+          cp -r assets _deploy/
+          cp -r dist _deploy/
+
       - uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
-          exclude_assets: "src/**,node_modules/**,.github/**,package.json,pnpm-lock.yaml,.gitignore,.claude/**"
+          publish_dir: ./_deploy
+          force_orphan: true
