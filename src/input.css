@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+* {
+  text-wrap: pretty;
+}
+
+html {
+  text-rendering: optimizeLegibility;
+  font-optical-sizing: auto;
+  hanging-punctuation: first last;
+}
+
+/* Tabular figures for pricing alignment */
+table {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Headings: tighter tracking at large sizes */
+h1, h2 {
+  letter-spacing: -0.02em;
+}
+
+.bg-hair-texture {
+  background-image: image-set(
+    url("/assets/images/hair-background.avif") type("image/avif"),
+    url("/assets/images/hair-background.webp") type("image/webp"),
+    url("/assets/images/hair-background.png") type("image/png")
+  );
+}
+
+@theme {
+  --font-sans: "Manrope", sans-serif;
+  --font-serif: "Newsreader", serif;
+
+  --color-offwhite: #FAFAF5;
+  --color-light-sage: #F3F4EE;
+  --color-sage: #DEE4DA;
+  --color-green-muted: #AEB4AA;
+  --color-green: #636D62;
+  --color-olive: #4B5548;
+  --color-dark: #2E342D;
+
+  /* Responsive type scale: min @ 375px → max @ 1024px */
+  --text-display: clamp(2.75rem, 2rem + 3.5vw, 4rem);     /* 44px → 64px */
+  --text-heading: clamp(1.875rem, 1.25rem + 2.75vw, 3.5rem); /* 30px → 56px */
+  --text-subheading: clamp(1.5rem, 1.25rem + 1vw, 2rem);  /* 24px → 32px */
+  --text-body-lg: clamp(1.125rem, 1rem + 0.5vw, 1.375rem); /* 18px → 22px */
+  --text-body: clamp(1.125rem, 1rem + 0.25vw, 1.25rem);   /* 18px → 20px */
+}
